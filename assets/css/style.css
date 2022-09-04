@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f9;
+    font-family: century gothic;
+}
+
+.container {
+    width: 1010px;
+    margin: auto;
+}
+
+.heading {
+    padding: 40px 0;
+}
+
+.name {
+    float: left;
+    left: 0;
+    color: rgb(121, 120, 120);
+}
+
+.links {
+    float: right;
+}
+
+.links img,
+.footer-links img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    margin: 0 6px;
+}
+
+.links img:hover,
+.footer-links img:hover {
+    opacity: 1;
+}
+
+.head-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 10px 30px gray;
+}
+
+.profile {
+    width: 100%;
+    background-color: #4a89dc;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.intro {
+    color: white;
+    height: 200px;
+    width: 100%;
+    padding: 70px 200px 0 0px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 25px;
+}
+
+.intro button {
+    background-color: #37bc9b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 55px;
+    border: none;
+    padding-bottom: 12px;
+    outline: none;
+}
+
+.intro button:hover {
+    background-color: #0fa682;
+    font-size: 13px;
+}
+
+.profile-pic {
+    float: left;
+}
+
+.profile-pic img {
+    width: 180px;
+    height: 180px;
+    margin: 85px 0 0 40px;
+    border: 7px solid white;
+    box-shadow: 2px 2px 15px gray;
+    border-radius: 2px;
+}
+
+.main-content .about-me,
+.main-content .skills,
+.main-content .education,
+.main-content .contact,
+.main-content .portfolio {
+    padding: 0 30px;
+}
+
+.about-me {
+    height: 180px;
+}
+
+.about-me .left {
+    width: 50%;
+    float: left;
+    padding: 40px 0px 0 0;
+    height: 60%;
+}
+
+.about-me .right {
+    float: right;
+    width: 45%;
+    padding-top: 30px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-2 {
+    float: right;
+    width: 65%;
+    margin-top: 6px;
+}
+
+.skill-1,
+.skill-2 {
+    width: 50%;
+}
+
+.skill-1 {
+    float: left;
+}
+
+.skill-2 {
+    float: right;
+}
+
+.progress-bar {
+    width: 90%;
+    height: 20px;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(207, 204, 204);
+    margin: 20px 0;
+}
+
+.percent {
+    width: 20%;
+    border-radius: 10px 0px 0 10px;
+}
+
+.skills {
+    height: 250px;
+}
+
+.education {
+    height: 265px;
+}
+
+.education span {
+    color: gray;
+}
+
+.education .year {
+    text-indent: 20px;
+    color: gray;
+    margin-top: 20px;
+}
+
+.box-1 {
+    border: 1px solid lightgray;
+    padding: 25px;
+    border-left: 5px solid black;
+}
+
+.portfolio {
+    height: 200px;
+}
+
+.contact {
+    height: 380px;
+}
+
+.contact-left {
+    width: 55%;
+    float: left;
+}
+
+.contact-right {
+    float: right;
+    line-height: 40px;
+    width: 40%;
+}
+
+.contact-right label {
+    font-weight: bold;
+}
+
+.contact-left .col-2 {
+    right: 0;
+}
+
+input[type=text],
+input[type=email] {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 250px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px;
+    padding: 0.4em;
+    width: 100%;
+    border: 1px solid lightgray;
+    resize: none;
+    border-radius: 4px;
+    font-family: century gothic;
+}
+
+.col-3 {
+    float: left;
+}
+
+.col-4 {
+    float: right;
+}
+
+input[type=submit] {
+    background-color: #4a89dc;
+    padding: 10px 20px;
+    border-radius: 70px;
+    border: none;
+    color: white;
+    outline: none;
+    margin-top: 8px;
+}
+
+input[type=submit]:hover {
+    background-color: #255594;
+    font-size: 13px;
+}
+
+.footer {
+    height: 200px;
+    margin-top: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(121, 120, 120);
+}
+
+@media screen and (max-width: 1010px) {
+    .container {
+        width: 780px;
+        margin: auto;
+    }
+    input[type=text],
+    input[type=email] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 700px;
+        margin: auto;
+    }
+    .name,
+    .email {
+        float: left;
+        width: 100%;
+        /* border: 1px solid red; */
+        /* width: 300px; */
+    }
+    input[type=text],
+    input[type=email] {
+        width: 100%;
+    }
+    .contact {
+        box-sizing: border-box;
+    }
+    .intro h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 520px;
+        margin: auto;
+    }
+    .heading {
+        line-height: 50px;
+        height: 140px;
+    }
+    .name {
+        width: 100%;
+        text-align: center;
+    }
+    .links {
+        width: 100%;
+        text-align: center;
+    }
+    .profile {
+        height: 380px;
+        text-align: center;
+    }
+    .profile-pic {
+        width: 100%;
+        margin: -35px 0 0 -10px;
+        padding: 0;
+    }
+    .intro {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .about-me {
+        height: 300px;
+    }
+    .about-me .left {
+        width: 100%;
+        margin: -30px 0 -50px 0;
+    }
+    .about-me .right {
+        width: 100%;
+    }
+    .skills {
+        height: 400px;
+    }
+    .skill-1,
+    .skill-2 {
+        width: 100%;
+    }
+    .education {
+        height: 280px;
+    }
+    .education .year {
+        text-indent: 0;
+        margin-top: 20px;
+    }
+    .contact {
+        height: 660px;
+    }
+    .contact-left {
+        width: 100%;
+    }
+    input[type=text],
+    input[type=email] {
+        padding: 8px;
+        margin-bottom: 20px;
+        width: 100%;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+    }
+    .contact-right {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .footer {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* body {
+        background-color: red;
+    } */
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    input[type=text],
+    input[type=email] {
+        padding: 8px;
+        margin-bottom: 20px;
+        width: 100%;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+    }
+    .contact-right {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .contact {
+        height: 700px;
+    }
+    .education {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    .contact {
+        height: 730px;
+    }
+    .intro h1 {
+        font-size: 35px;
+    }
+    /* .contact-in {
+        width: 100%;
+        float: left;
+    } */
+}

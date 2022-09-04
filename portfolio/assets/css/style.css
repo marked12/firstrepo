@@ -87,9 +87,24 @@ body {
     width: 180px;
     height: 180px;
     margin: 85px 0 0 40px;
-    border: 7px solid white;
-    box-shadow: 2px 2px 15px gray;
-    border-radius: 2px;
+    /* border: 7px solid white; */
+    /* box-shadow: 7px 2px 2px 9px white; */
+    border-radius: 5px;
+    outline: 5px solid #dbdada;
+}
+
+.portfolio {
+    height: 400px !important;
+}
+
+.box-1 {
+    display: inline-block;
+    /* margin: 10px !important; */
+}
+
+.box-1 img {
+    width: 400px;
+    height: 150px;
 }
 
 .main-content .about-me,
@@ -187,10 +202,6 @@ body {
     border-left: 5px solid black;
 }
 
-.portfolio {
-    height: 200px;
-}
-
 .contact {
     height: 380px;
 }
@@ -273,6 +284,10 @@ input[type=submit]:hover {
     input[type=email] {
         width: 100%;
     }
+    .portfolio {
+        height: 800px !important;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -297,6 +312,12 @@ input[type=submit]:hover {
     .intro h1 {
         font-size: 42px;
     }
+    .box-2 {
+        margin-bottom: 20px;
+    }
+    .portfolio {
+        height: 850px !important;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -304,6 +325,17 @@ input[type=submit]:hover {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+    }
+    .portfolio {
+        height: 850px !important;
+        text-align: left;
+    }
+    .portfolio.box-1 {
+        display: block;
+        margin-top: 20px !important;
+    }
+    .box-1 img {
+        width: 100%;
     }
     .container {
         width: 520px;
